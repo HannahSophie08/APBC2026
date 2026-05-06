@@ -1,3 +1,5 @@
 Naja Krebs
 Anna 
 Hannah Hartung
+
+First version of bot: uses breadth-first search to find shortest path to the gold pot. Saves known tile positions. If no path can be found, moves randomly.
