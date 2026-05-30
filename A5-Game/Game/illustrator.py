@@ -137,7 +137,7 @@ class Illustrator:
         fig.canvas.draw() # make sure walls are drawn
         extent = self.ax.get_window_extent().transformed(fig.dpi_scale_trans.inverted())
         # safe area inside the axis as png
-        plt.savefig('background.png', dpi=100, bbox_inches=extent)
+        plt.savefig('background.png', dpi=200, bbox_inches=extent)
 
         self.ax.cla()
         self.init_plot()  # restore axis limits
@@ -157,7 +157,7 @@ class Illustrator:
         gif = FuncAnimation(fig, self.illustrate_round,
                             self.n_rounds)
         gif.save(self.vizfile, 
-                 dpi=100, fps=self.FRAME_PER_SECOND) # higher dpi 
+                 dpi=200, fps=self.FRAME_PER_SECOND) # higher dpi 
 
     def init_plot(self):
         self.ax.tick_params(
@@ -309,7 +309,7 @@ class Illustrator:
             mine_img = plt.imread(self.theme['mine_image'])
             self.mine_boxes = []
             for _ in range(5):
-                imagebox = OffsetImage(mine_img, zoom=0.04)
+                imagebox = OffsetImage(mine_img, zoom=0.03)
                 box = AnnotationBbox(imagebox, (0, 0), frameon=False, zorder=4)
                 box.set_visible(False)   # hidden until a mine needs it
                 self.ax.add_artist(box)
