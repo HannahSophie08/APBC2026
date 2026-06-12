@@ -1,0 +1,57 @@
+Benchmark results (QUICK_TEST=False)
+N_GAMES_PER_MAP = 25, ROUNDS = 200
+================================================================================
+
+--- random ---
+  Hannahold  wins= 6 ( 24.0%)  mean= 324.0  median=  30.0  stdev=572.0  min=   1  max=1582
+  v6        wins= 1 (  4.0%)  mean= 428.0  median= 408.0  stdev=228.8  min= 114  max= 862
+  v5new     wins= 0 (  0.0%)  mean= 277.6  median= 207.0  stdev=115.6  min= 182  max= 520
+  botHannah  wins= 7 ( 28.0%)  mean= 570.4  median= 407.0  stdev=544.7  min=  30  max=2231
+  group2    wins=11 ( 44.0%)  mean= 520.5  median= 619.0  stdev=535.0  min=   1  max=1917
+
+--- maze_map ---
+  Hannahold  wins= 0 (  0.0%)  mean=  56.6  median=  30.0  stdev= 65.3  min=   0  max= 234
+  v6        wins= 2 (  8.0%)  mean= 374.3  median= 362.0  stdev=122.1  min= 177  max= 607
+  v5new     wins= 9 ( 36.0%)  mean= 470.8  median= 451.0  stdev=109.6  min= 277  max= 706
+  botHannah  wins= 2 (  8.0%)  mean= 253.4  median= 252.0  stdev=137.5  min=  72  max= 614
+  group2    wins=12 ( 48.0%)  mean= 483.2  median= 460.0  stdev=279.4  min=   9  max=1057
+
+--- floodfill_map ---
+  Hannahold  wins= 4 ( 16.0%)  mean= 329.8  median=  16.0  stdev=738.5  min=   1  max=2393
+  v6        wins= 2 (  8.0%)  mean= 556.9  median= 532.0  stdev=273.9  min=  86  max=1038
+  v5new     wins= 0 (  0.0%)  mean= 215.4  median= 186.0  stdev= 61.2  min= 165  max= 396
+  botHannah  wins=12 ( 48.0%)  mean=1169.6  median= 882.0  stdev=1044.6  min=  17  max=3251
+  group2    wins= 7 ( 28.0%)  mean= 538.6  median= 330.0  stdev=705.9  min=   3  max=2446
+
+--- inverse_floodfill_map ---
+  Hannahold  wins= 0 (  0.0%)  mean=  12.4  median=   6.0  stdev= 13.3  min=   0  max=  41
+  v6        wins= 1 (  4.0%)  mean= 497.8  median= 472.0  stdev=191.2  min= 229  max= 890
+  v5new     wins= 0 (  0.0%)  mean= 382.3  median= 369.0  stdev=161.7  min= 203  max= 815
+  botHannah  wins= 5 ( 20.0%)  mean= 458.0  median= 516.0  stdev=263.8  min=  16  max=1059
+  group2    wins=19 ( 76.0%)  mean= 873.8  median= 879.0  stdev=461.3  min=   7  max=1772
+
+--- random_coverage_map ---
+  Hannahold  wins= 3 ( 12.0%)  mean= 316.2  median=  23.0  stdev=640.3  min=   0  max=2282
+  v6        wins= 2 (  8.0%)  mean= 519.0  median= 503.0  stdev=168.4  min= 215  max= 853
+  v5new     wins= 0 (  0.0%)  mean= 214.9  median= 178.0  stdev= 83.3  min= 158  max= 483
+  botHannah  wins=11 ( 44.0%)  mean= 780.2  median= 694.0  stdev=639.0  min=  30  max=1840
+  group2    wins= 9 ( 36.0%)  mean= 666.2  median= 643.0  stdev=557.8  min=   0  max=2001
+
+--- mazes_and_caves ---
+  Hannahold  wins= 0 (  0.0%)  mean=   2.2  median=   2.0  stdev=  2.2  min=   0  max=   8
+  v6        wins= 3 ( 12.0%)  mean= 352.8  median= 299.0  stdev= 83.8  min= 241  max= 543
+  v5new     wins= 8 ( 32.0%)  mean= 357.1  median= 297.0  stdev= 92.1  min= 264  max= 579
+  botHannah  wins= 4 ( 16.0%)  mean= 246.8  median= 185.0  stdev=170.3  min=  29  max= 771
+  group2    wins=10 ( 40.0%)  mean= 392.4  median= 349.0  stdev=242.5  min=  50  max=1028
+
+=== OVERALL (150 games) ===
+  Hannahold  wins= 13 (  8.7%)  mean= 173.6  median=   8.5  stdev=479.8  min=   0  max=2393
+  v6        wins= 11 (  7.3%)  mean= 454.8  median= 417.5  stdev=200.5  min=  86  max=1038
+  v5new     wins= 17 ( 11.3%)  mean= 319.7  median= 288.5  stdev=141.7  min= 158  max= 815
+  botHannah  wins= 41 ( 27.3%)  mean= 579.7  median= 349.5  stdev=642.1  min=  16  max=3251
+  group2    wins= 68 ( 45.3%)  mean= 579.1  median= 509.5  stdev=506.9  min=   0  max=2446
+
+=== SCOUT representative games ===
+  worst : gold=158, map=random_coverage_map, seed=614897786
+  median: gold=289, map=random, seed=1664530016
+  best  : gold=815, map=inverse_floodfill_map, seed=251225284
