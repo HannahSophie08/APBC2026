@@ -16,7 +16,7 @@ from game_utils import Map, Status, GameParameters
 from illustrator import Illustrator
 
 class Simulator(object):
-	def __init__(self, *, map, seed=None, vizfile=None, framerate):
+	def __init__(self, *, map, seed=None, vizfile=None, framerate, theme = 'default'):
 		self.rng = random.Random()
 		if seed is None:
 			seed = random.randrange(sys.maxsize)
@@ -54,7 +54,7 @@ class Simulator(object):
 		# the object we give the player each time, updated from the internal data
 		self._pubStat = pubStat = []  
 
-		self.illustrator = Illustrator(self.map, vizfile, framerate)
+		self.illustrator = Illustrator(self.map, vizfile, framerate, theme)
 
 	def _random_empty_spot(self):
 		while True:
