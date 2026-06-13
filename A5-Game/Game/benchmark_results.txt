@@ -3,48 +3,59 @@ N_GAMES_PER_MAP = 25, ROUNDS = 200
 ================================================================================
 
 --- random ---
-  v2      wins= 5 ( 20.0%)  mean= 468.1  median= 463.0  stdev=151.2  min=  99  max= 712
-  v3      wins= 5 ( 20.0%)  mean= 472.8  median= 429.0  stdev=186.5  min=  99  max= 856
-  scout   wins= 9 ( 36.0%)  mean= 555.2  median= 570.0  stdev=158.1  min= 283  max= 875
-  silly   wins= 6 ( 24.0%)  mean= 527.9  median= 531.0  stdev=148.9  min= 318  max= 811
+  Test    wins= 0 (  0.0%)  mean= 210.6  median= 199.0  stdev=129.3  min=  99  max= 502
+  Beatme  wins= 5 ( 20.0%)  mean= 575.7  median= 592.0  stdev=164.4  min= 219  max= 870
+  Scout-version 2  wins= 2 (  8.0%)  mean= 453.2  median= 464.0  stdev=168.3  min= 191  max= 793
+  Scout-version 3  wins= 6 ( 24.0%)  mean= 497.2  median= 472.0  stdev=235.9  min=  99  max=1010
+  Scout-version 4  wins= 7 ( 28.0%)  mean= 516.4  median= 513.0  stdev=195.9  min= 202  max= 854
+  Scout-version 5  wins= 5 ( 20.0%)  mean= 594.6  median= 613.0  stdev=193.9  min= 295  max=1023
 
 --- maze_map ---
-  v2      wins= 7 ( 28.0%)  mean= 377.2  median= 408.0  stdev=132.2  min=  99  max= 583
-  v3      wins= 3 ( 12.0%)  mean= 305.2  median= 302.0  stdev=142.4  min=  99  max= 644
-  scout   wins= 7 ( 28.0%)  mean= 387.2  median= 312.0  stdev=203.6  min=  99  max= 842
-  silly   wins= 8 ( 32.0%)  mean= 403.2  median= 393.0  stdev=122.2  min= 252  max= 624
+  Test    wins= 0 (  0.0%)  mean= 115.0  median=  99.0  stdev= 44.5  min=  99  max= 249
+  Beatme  wins= 7 ( 28.0%)  mean= 435.7  median= 401.0  stdev=142.2  min= 261  max= 773
+  Scout-version 2  wins= 7 ( 28.0%)  mean= 406.8  median= 407.0  stdev=178.9  min=  99  max= 782
+  Scout-version 3  wins= 5 ( 20.0%)  mean= 368.0  median= 341.0  stdev=207.0  min=  99  max= 919
+  Scout-version 4  wins= 1 (  4.0%)  mean= 309.9  median= 285.0  stdev=147.2  min=  99  max= 599
+  Scout-version 5  wins= 5 ( 20.0%)  mean= 363.0  median= 313.0  stdev=166.9  min=  99  max= 763
 
 --- floodfill_map ---
-  v2      wins= 2 (  8.0%)  mean= 504.8  median= 467.0  stdev=139.3  min= 214  max= 807
-  v3      wins= 6 ( 24.0%)  mean= 575.4  median= 561.0  stdev=183.6  min= 205  max= 901
-  scout   wins=12 ( 48.0%)  mean= 725.9  median= 683.0  stdev=234.8  min= 374  max=1351
-  silly   wins= 5 ( 20.0%)  mean= 550.0  median= 547.0  stdev=147.3  min= 330  max= 860
+  Test    wins= 0 (  0.0%)  mean= 344.2  median= 364.0  stdev=160.3  min=  99  max= 608
+  Beatme  wins= 2 (  8.0%)  mean= 584.7  median= 599.0  stdev=133.5  min= 276  max= 868
+  Scout-version 2  wins= 0 (  0.0%)  mean= 384.9  median= 389.0  stdev=185.6  min=  99  max= 670
+  Scout-version 3  wins= 9 ( 36.0%)  mean= 667.6  median= 560.0  stdev=275.1  min= 219  max=1440
+  Scout-version 4  wins= 6 ( 24.0%)  mean= 693.3  median= 671.0  stdev=226.5  min= 291  max=1176
+  Scout-version 5  wins= 8 ( 32.0%)  mean= 660.2  median= 703.0  stdev=210.8  min= 191  max= 910
 
 --- inverse_floodfill_map ---
-  v2      wins= 4 ( 16.0%)  mean= 434.2  median= 444.0  stdev=158.8  min=  99  max= 812
-  v3      wins= 4 ( 16.0%)  mean= 523.3  median= 451.0  stdev=238.0  min=  99  max=1101
-  scout   wins=10 ( 40.0%)  mean= 547.5  median= 558.0  stdev=228.2  min=  99  max= 951
-  silly   wins= 7 ( 28.0%)  mean= 554.9  median= 551.0  stdev=144.2  min= 337  max= 854
+  Test    wins= 0 (  0.0%)  mean= 200.2  median=  99.0  stdev=138.4  min=  99  max= 622
+  Beatme  wins= 4 ( 16.0%)  mean= 594.6  median= 596.0  stdev=203.5  min= 322  max=1060
+  Scout-version 2  wins= 3 ( 12.0%)  mean= 472.8  median= 451.0  stdev=203.6  min= 199  max= 934
+  Scout-version 3  wins= 7 ( 28.0%)  mean= 550.2  median= 492.0  stdev=255.3  min=  99  max=1068
+  Scout-version 4  wins= 3 ( 12.0%)  mean= 478.7  median= 508.0  stdev=205.3  min=  99  max= 841
+  Scout-version 5  wins= 8 ( 32.0%)  mean= 584.6  median= 518.0  stdev=225.2  min= 181  max=1080
 
 --- random_coverage_map ---
-  v2      wins= 3 ( 12.0%)  mean= 501.9  median= 463.0  stdev=193.5  min=  99  max= 997
-  v3      wins= 8 ( 32.0%)  mean= 559.6  median= 579.0  stdev=206.0  min=  99  max= 961
-  scout   wins=10 ( 40.0%)  mean= 654.0  median= 683.0  stdev=220.6  min= 288  max=1140
-  silly   wins= 4 ( 16.0%)  mean= 535.3  median= 530.0  stdev=134.6  min= 296  max= 814
+  Test    wins= 0 (  0.0%)  mean= 340.0  median= 339.0  stdev=149.4  min=  99  max= 631
+  Beatme  wins= 4 ( 16.0%)  mean= 529.6  median= 487.0  stdev=185.7  min= 165  max= 923
+  Scout-version 2  wins= 3 ( 12.0%)  mean= 427.3  median= 386.0  stdev=222.5  min=  99  max= 829
+  Scout-version 3  wins= 4 ( 16.0%)  mean= 587.7  median= 599.0  stdev=255.0  min= 213  max=1003
+  Scout-version 4  wins= 5 ( 20.0%)  mean= 672.4  median= 660.0  stdev=225.6  min= 290  max=1263
+  Scout-version 5  wins= 9 ( 36.0%)  mean= 697.4  median= 725.0  stdev=253.9  min= 226  max=1211
 
 --- mazes_and_caves ---
-  v2      wins= 4 ( 16.0%)  mean= 224.6  median= 208.0  stdev=112.7  min=  99  max= 456
-  v3      wins= 3 ( 12.0%)  mean= 212.7  median= 199.0  stdev=106.7  min=  99  max= 410
-  scout   wins= 2 (  8.0%)  mean= 213.6  median= 194.0  stdev= 94.1  min=  99  max= 402
-  silly   wins=16 ( 64.0%)  mean= 393.7  median= 383.0  stdev=100.9  min= 248  max= 623
+  Test    wins= 0 (  0.0%)  mean= 161.9  median=  99.0  stdev= 77.0  min=  99  max= 329
+  Beatme  wins=12 ( 48.0%)  mean= 387.4  median= 382.0  stdev=108.9  min= 257  max= 671
+  Scout-version 2  wins= 1 (  4.0%)  mean= 188.4  median=  99.0  stdev=103.2  min=  99  max= 354
+  Scout-version 3  wins= 6 ( 24.0%)  mean= 236.2  median= 216.0  stdev=152.2  min=  99  max= 586
+  Scout-version 4  wins= 5 ( 20.0%)  mean= 254.1  median= 218.0  stdev=138.8  min=  72  max= 558
+  Scout-version 5  wins= 1 (  4.0%)  mean= 218.0  median= 198.0  stdev=118.0  min=  99  max= 590
 
 === OVERALL (150 games) ===
-  v2      wins= 25 ( 16.7%)  mean= 418.5  median= 443.0  stdev=176.7  min=  99  max= 997
-  v3      wins= 29 ( 19.3%)  mean= 441.5  median= 417.5  stdev=225.0  min=  99  max=1101
-  scout   wins= 50 ( 33.3%)  mean= 513.9  median= 506.5  stdev=257.6  min=  99  max=1351
-  silly   wins= 46 ( 30.7%)  mean= 494.1  median= 484.0  stdev=148.6  min= 248  max= 860
+  Test    wins=  0 (  0.0%)  mean= 228.7  median= 211.0  stdev=149.0  min=  99  max= 631
+  Beatme  wins= 34 ( 22.7%)  mean= 517.9  median= 476.0  stdev=175.8  min= 165  max=1060
+  Scout-version 2  wins= 16 ( 10.7%)  mean= 388.9  median= 364.5  stdev=201.4  min=  99  max= 934
+  Scout-version 3  wins= 37 ( 24.7%)  mean= 484.5  median= 468.0  stdev=271.2  min=  99  max=1440
+  Scout-version 4  wins= 27 ( 18.0%)  mean= 487.5  median= 498.0  stdev=251.9  min=  72  max=1263
+  Scout-version 5  wins= 36 ( 24.0%)  mean= 519.6  median= 522.0  stdev=261.0  min=  99  max=1211
 
-=== SCOUT representative games ===
-  worst : gold=99, map=maze_map, seed=3164432654
-  median: gold=508, map=random_coverage_map, seed=1473439547
-  best  : gold=1351, map=floodfill_map, seed=2223936619
+Total runtime: 3120.5s
