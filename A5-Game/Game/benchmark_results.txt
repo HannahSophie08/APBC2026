@@ -1,0 +1,50 @@
+Benchmark results (QUICK_TEST=False)
+N_GAMES_PER_MAP = 25, ROUNDS = 200
+================================================================================
+
+--- random ---
+  v2      wins= 5 ( 20.0%)  mean= 468.1  median= 463.0  stdev=151.2  min=  99  max= 712
+  v3      wins= 5 ( 20.0%)  mean= 472.8  median= 429.0  stdev=186.5  min=  99  max= 856
+  scout   wins= 9 ( 36.0%)  mean= 555.2  median= 570.0  stdev=158.1  min= 283  max= 875
+  silly   wins= 6 ( 24.0%)  mean= 527.9  median= 531.0  stdev=148.9  min= 318  max= 811
+
+--- maze_map ---
+  v2      wins= 7 ( 28.0%)  mean= 377.2  median= 408.0  stdev=132.2  min=  99  max= 583
+  v3      wins= 3 ( 12.0%)  mean= 305.2  median= 302.0  stdev=142.4  min=  99  max= 644
+  scout   wins= 7 ( 28.0%)  mean= 387.2  median= 312.0  stdev=203.6  min=  99  max= 842
+  silly   wins= 8 ( 32.0%)  mean= 403.2  median= 393.0  stdev=122.2  min= 252  max= 624
+
+--- floodfill_map ---
+  v2      wins= 2 (  8.0%)  mean= 504.8  median= 467.0  stdev=139.3  min= 214  max= 807
+  v3      wins= 6 ( 24.0%)  mean= 575.4  median= 561.0  stdev=183.6  min= 205  max= 901
+  scout   wins=12 ( 48.0%)  mean= 725.9  median= 683.0  stdev=234.8  min= 374  max=1351
+  silly   wins= 5 ( 20.0%)  mean= 550.0  median= 547.0  stdev=147.3  min= 330  max= 860
+
+--- inverse_floodfill_map ---
+  v2      wins= 4 ( 16.0%)  mean= 434.2  median= 444.0  stdev=158.8  min=  99  max= 812
+  v3      wins= 4 ( 16.0%)  mean= 523.3  median= 451.0  stdev=238.0  min=  99  max=1101
+  scout   wins=10 ( 40.0%)  mean= 547.5  median= 558.0  stdev=228.2  min=  99  max= 951
+  silly   wins= 7 ( 28.0%)  mean= 554.9  median= 551.0  stdev=144.2  min= 337  max= 854
+
+--- random_coverage_map ---
+  v2      wins= 3 ( 12.0%)  mean= 501.9  median= 463.0  stdev=193.5  min=  99  max= 997
+  v3      wins= 8 ( 32.0%)  mean= 559.6  median= 579.0  stdev=206.0  min=  99  max= 961
+  scout   wins=10 ( 40.0%)  mean= 654.0  median= 683.0  stdev=220.6  min= 288  max=1140
+  silly   wins= 4 ( 16.0%)  mean= 535.3  median= 530.0  stdev=134.6  min= 296  max= 814
+
+--- mazes_and_caves ---
+  v2      wins= 4 ( 16.0%)  mean= 224.6  median= 208.0  stdev=112.7  min=  99  max= 456
+  v3      wins= 3 ( 12.0%)  mean= 212.7  median= 199.0  stdev=106.7  min=  99  max= 410
+  scout   wins= 2 (  8.0%)  mean= 213.6  median= 194.0  stdev= 94.1  min=  99  max= 402
+  silly   wins=16 ( 64.0%)  mean= 393.7  median= 383.0  stdev=100.9  min= 248  max= 623
+
+=== OVERALL (150 games) ===
+  v2      wins= 25 ( 16.7%)  mean= 418.5  median= 443.0  stdev=176.7  min=  99  max= 997
+  v3      wins= 29 ( 19.3%)  mean= 441.5  median= 417.5  stdev=225.0  min=  99  max=1101
+  scout   wins= 50 ( 33.3%)  mean= 513.9  median= 506.5  stdev=257.6  min=  99  max=1351
+  silly   wins= 46 ( 30.7%)  mean= 494.1  median= 484.0  stdev=148.6  min= 248  max= 860
+
+=== SCOUT representative games ===
+  worst : gold=99, map=maze_map, seed=3164432654
+  median: gold=508, map=random_coverage_map, seed=1473439547
+  best  : gold=1351, map=floodfill_map, seed=2223936619
