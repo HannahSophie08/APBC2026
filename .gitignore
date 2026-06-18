@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated visualizations
+*.gif
+
+# Benchmark / log outputs
+benchmark_results.txt
+testlog.txt
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
